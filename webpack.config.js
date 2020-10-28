@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["./src/index.js", "./src/index.scss"],
   output: {
     filename: "main.js",
     path: path.join(__dirname, 'dist')
@@ -15,14 +15,26 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [ 
           {
-           loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          }
+						loader: 'file-loader',
+						options: {
+							name: 'css/[name].index.css',
+						}
+					},
+					{
+						loader: 'extract-loader'
+					},
+					{
+						loader: 'css-loader?-url'
+					},
+					{
+						loader: 'postcss-loader'
+					},
+					{
+						loader: 'sass-loader'
+					}
         ]
       }
     ]
