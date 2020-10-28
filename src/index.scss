@@ -1,2 +1,13 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+html {
+  & body {
+    & #content {
+      height: 100vh;
+      background: url('../../src/assets/images/Stock.jpeg');
+      background-repeat: no-repeat;
+      
+    }
+  }
+}

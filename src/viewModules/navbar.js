@@ -1,6 +1,6 @@
 const navCreator = () => {
   let body = document.querySelector('body');
-  let navbarContainer = document.createElement('div');
+  let navbarContainer = document.getElementById('content');
   let unorderedList = document.createElement('ul');
   let list = document.createElement('li');
   let anchor = document.createElement('a');
