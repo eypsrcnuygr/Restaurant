@@ -23,20 +23,21 @@ const navCreator = () => {
 
   body.insertBefore(navbarContainer, content)
   unorderedList.setAttribute('class', 'nav nav-tabs list-unstyled');
-  list.setAttribute('class', 'nav-item list-inline-item');
-  secondList.setAttribute('class', 'nav-item list-inline-item');
-  thirdList.setAttribute('class', 'nav-item list-inline-item');
+  list.setAttribute('class', 'nav-item list-inline-item px-4');
+  secondList.setAttribute('class', 'nav-item list-inline-item px-4');
+  thirdList.setAttribute('class', 'nav-item list-inline-item px-4');
   anchor.setAttribute('class', 'nav-link btn text-light');
   anchor.setAttribute('id', 'firstAnchor');
   secondAnchor.setAttribute('id', 'secondAnchor');
   secondAnchor.setAttribute('class', 'nav-link btn text-light')
   thirdAnchor.setAttribute('class', 'nav-link btn text-light')
+  thirdAnchor.setAttribute('id', 'thirdAnchor')
   unorderedList.setAttribute('class', 'd-flex justify-content-center mb-0')
   navbarContainer.setAttribute('class', 'bg-secondary')
   return {
     firstAnchor,
     secondAnchor,
-    thirdAnchor
+    thirdAnchor,
   }
 }
 

@@ -7,6 +7,7 @@ let menuCreator = () => {
   let firtsH5 = document.createElement('h5');
   let secondH5 = document.createElement('h5');
   let thirdH5 = document.createElement('h5');
+  let generalH2 = document.createElement('h2');
   let firstP = document.createElement('p');
   let secondP = document.createElement('p');
   let thirdP = document.createElement('p');
@@ -64,6 +65,7 @@ let menuCreator = () => {
   twentyfifthP.textContent = '—  Lamb Stew  —';
   twentysixthP.textContent = 'roma tomatoes, cannellini beans, onion';
   twentyseventhP.textContent = '$21'
+  generalH2.textContent = 'Menu'
   firstDiv.appendChild(firtsH5);
   firstDiv.appendChild(firstP);
   firstDiv.appendChild(secondP);
@@ -97,7 +99,12 @@ let menuCreator = () => {
   section.appendChild(firstDiv);
   section.appendChild(secondDiv);
   section.appendChild(thirdDiv);
-  section.setAttribute('class', 'modifySection')
+  body.appendChild(generalH2);
+  section.setAttribute('class', 'modifySection d-flex justify-content-center bg-info text-center mx-auto w-75 mt-5 py-5 text-light font-weight-bold')
+  firstDiv.setAttribute('class', 'mx-4')
+  secondDiv.setAttribute('class', 'mx-4')
+  thirdDiv.setAttribute('class', 'mx-4')
+  generalH2.setAttribute('class', 'text-center text-primary mt-4 pr-5')
   body.appendChild(section);
 }
 
