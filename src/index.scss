@@ -3,12 +3,28 @@
 
 html {
   & body {
-    & #content {
-      height: 100vh;
+    height: 100vh;
+    & .withBackground {
+      height: 95.5vh;
       background: url('../../src/assets/images/Stock.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      opacity: 0.85;
+    }
+
+    & #content {
+      height: 95.5vh;
+      background: url('../../src/assets/images/Stock.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.85;
+    }
+
+    & .withouthBackground {
+      background: none !important;
+      height: 0 !important;
     }
   }
 }
