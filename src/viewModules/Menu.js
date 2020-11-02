@@ -1,40 +1,40 @@
-let menuCreator = () => {
-  let body = document.querySelector('body')
-  let section = document.createElement('section');
-  let firstDiv = document.createElement('div');
-  let secondDiv = document.createElement('div');
-  let thirdDiv = document.createElement('div');
-  let firtsH5 = document.createElement('h5');
-  let secondH5 = document.createElement('h5');
-  let thirdH5 = document.createElement('h5');
-  let generalH2 = document.createElement('h2');
-  let firstP = document.createElement('p');
-  let secondP = document.createElement('p');
-  let thirdP = document.createElement('p');
-  let fourthP = document.createElement('p');
-  let fifthP = document.createElement('p');
-  let sixthP = document.createElement('p');
-  let seventhP = document.createElement('p');
-  let eighthP = document.createElement('p');
-  let ninthP = document.createElement('p');
-  let tenthP = document.createElement('p');
-  let eleventhP = document.createElement('p');
-  let twelfthP = document.createElement('p');
-  let thirteenthP = document.createElement('p');
-  let fourteenthP = document.createElement('p');
-  let fifteenthP = document.createElement('p');
-  let sixteenthP = document.createElement('p');
-  let seventeenthP = document.createElement('p');
-  let eighteenthP = document.createElement('p');
-  let nineteenthP = document.createElement('p');
-  let tweentiethP = document.createElement('p');
-  let twentyonethP = document.createElement('p');
-  let twentytwothP = document.createElement('p');
-  let twentythreethP = document.createElement('p');
-  let twentyfourthP = document.createElement('p');
-  let twentyfifthP = document.createElement('p');
-  let twentysixthP = document.createElement('p');
-  let twentyseventhP = document.createElement('p');
+const menuCreator = () => {
+  const body = document.querySelector('body');
+  const section = document.createElement('section');
+  const firstDiv = document.createElement('div');
+  const secondDiv = document.createElement('div');
+  const thirdDiv = document.createElement('div');
+  const firtsH5 = document.createElement('h5');
+  const secondH5 = document.createElement('h5');
+  const thirdH5 = document.createElement('h5');
+  const generalH2 = document.createElement('h2');
+  const firstP = document.createElement('p');
+  const secondP = document.createElement('p');
+  const thirdP = document.createElement('p');
+  const fourthP = document.createElement('p');
+  const fifthP = document.createElement('p');
+  const sixthP = document.createElement('p');
+  const seventhP = document.createElement('p');
+  const eighthP = document.createElement('p');
+  const ninthP = document.createElement('p');
+  const tenthP = document.createElement('p');
+  const eleventhP = document.createElement('p');
+  const twelfthP = document.createElement('p');
+  const thirteenthP = document.createElement('p');
+  const fourteenthP = document.createElement('p');
+  const fifteenthP = document.createElement('p');
+  const sixteenthP = document.createElement('p');
+  const seventeenthP = document.createElement('p');
+  const eighteenthP = document.createElement('p');
+  const nineteenthP = document.createElement('p');
+  const tweentiethP = document.createElement('p');
+  const twentyonethP = document.createElement('p');
+  const twentytwothP = document.createElement('p');
+  const twentythreethP = document.createElement('p');
+  const twentyfourthP = document.createElement('p');
+  const twentyfifthP = document.createElement('p');
+  const twentysixthP = document.createElement('p');
+  const twentyseventhP = document.createElement('p');
   firtsH5.textContent = 'Garden';
   secondH5.textContent = 'Sea';
   thirdH5.textContent = 'Land';
@@ -64,8 +64,8 @@ let menuCreator = () => {
   twentyfourthP.textContent = '$19';
   twentyfifthP.textContent = '—  Lamb Stew  —';
   twentysixthP.textContent = 'roma tomatoes, cannellini beans, onion';
-  twentyseventhP.textContent = '$21'
-  generalH2.textContent = 'Menu'
+  twentyseventhP.textContent = '$21';
+  generalH2.textContent = 'Menu';
   firstDiv.appendChild(firtsH5);
   firstDiv.appendChild(firstP);
   firstDiv.appendChild(secondP);
@@ -100,12 +100,12 @@ let menuCreator = () => {
   section.appendChild(secondDiv);
   section.appendChild(thirdDiv);
   body.appendChild(generalH2);
-  section.setAttribute('class', 'modifySection d-flex justify-content-center bg-info text-center mx-auto w-75 mt-5 py-5 text-light font-weight-bold')
-  firstDiv.setAttribute('class', 'mx-4')
-  secondDiv.setAttribute('class', 'mx-4')
-  thirdDiv.setAttribute('class', 'mx-4')
-  generalH2.setAttribute('class', 'text-center text-primary mt-4 pr-5')
+  section.setAttribute('class', 'modifySection d-flex justify-content-center bg-info text-center mx-auto w-75 mt-5 py-5 text-light font-weight-bold');
+  firstDiv.setAttribute('class', 'mx-4');
+  secondDiv.setAttribute('class', 'mx-4');
+  thirdDiv.setAttribute('class', 'mx-4');
+  generalH2.setAttribute('class', 'text-center text-primary mt-4 pr-5');
   body.appendChild(section);
-}
+};
 
-export {menuCreator}
+export default menuCreator;

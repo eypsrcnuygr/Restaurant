@@ -1,17 +1,17 @@
 const navCreator = () => {
-  let body = document.querySelector('body');
-  let navbarContainer = document.createElement('header')
-  let unorderedList = document.createElement('ul');
-  let list = document.createElement('li');
-  let anchor = document.createElement('a');
-  let secondList = document.createElement('li');
-  let secondAnchor = document.createElement('a');
-  let thirdList = document.createElement('li');
-  let thirdAnchor = document.createElement('a');
-  let content = document.getElementById('content')
+  const body = document.querySelector('body');
+  const navbarContainer = document.createElement('header');
+  const unorderedList = document.createElement('ul');
+  const list = document.createElement('li');
+  const anchor = document.createElement('a');
+  const secondList = document.createElement('li');
+  const secondAnchor = document.createElement('a');
+  const thirdList = document.createElement('li');
+  const thirdAnchor = document.createElement('a');
+  const content = document.getElementById('content');
   anchor.textContent = 'Home';
   secondAnchor.textContent = 'Menu';
-  thirdAnchor.textContent = 'Contact'
+  thirdAnchor.textContent = 'Contact';
   list.appendChild(anchor);
   secondList.appendChild(secondAnchor);
   thirdList.appendChild(thirdAnchor);
@@ -21,24 +21,19 @@ const navCreator = () => {
   navbarContainer.appendChild(unorderedList);
   body.appendChild(navbarContainer);
 
-  body.insertBefore(navbarContainer, content)
+  body.insertBefore(navbarContainer, content);
   unorderedList.setAttribute('class', 'nav nav-tabs list-unstyled');
   list.setAttribute('class', 'nav-item list-inline-item px-4');
   secondList.setAttribute('class', 'nav-item list-inline-item px-4');
   thirdList.setAttribute('class', 'nav-item list-inline-item px-4');
   anchor.setAttribute('class', 'nav-link btn text-light');
-  anchor.setAttribute('id', 'firstAnchor');
+  anchor.setAttribute('id', 'anchor');
   secondAnchor.setAttribute('id', 'secondAnchor');
-  secondAnchor.setAttribute('class', 'nav-link btn text-light')
-  thirdAnchor.setAttribute('class', 'nav-link btn text-light')
-  thirdAnchor.setAttribute('id', 'thirdAnchor')
-  unorderedList.setAttribute('class', 'd-flex justify-content-center mb-0')
-  navbarContainer.setAttribute('class', 'bg-secondary')
-  return {
-    firstAnchor,
-    secondAnchor,
-    thirdAnchor,
-  }
-}
+  secondAnchor.setAttribute('class', 'nav-link btn text-light');
+  thirdAnchor.setAttribute('class', 'nav-link btn text-light');
+  thirdAnchor.setAttribute('id', 'thirdAnchor');
+  unorderedList.setAttribute('class', 'd-flex justify-content-center mb-0');
+  navbarContainer.setAttribute('class', 'bg-secondary');
+};
 
-export {navCreator}
+export default navCreator;

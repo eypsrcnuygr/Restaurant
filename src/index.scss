@@ -1,9 +1,9 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-
 html {
   & body {
     height: 100vh;
+
     & .withBackground {
       height: 95.5vh;
       background: url('../../src/assets/images/Stock.jpeg');
