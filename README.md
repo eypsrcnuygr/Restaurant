@@ -10,6 +10,10 @@ This is the second project on Microverse JavaScript curriculum, to learn the DOM
 - ESLint
 - StyleLint
 
+## Live Demo
+
+Here is the [Live Demo](https://epic-wescoff-639037.netlify.app/) of the app.
+
 ## Prerequisities
 
 To get this project up and running locally, you must have node installed on your local machine.
