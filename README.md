@@ -1,6 +1,6 @@
 # Project-Library
 
-This is the second project on Microverse JavaScript curriculum, to learn the DOM manupilation, modularity and WebPack.
+This is the second project on the Microverse JavaScript curriculum, to learn DOM manipulation, modularity, and WebPack.
 
 ![screenshot](./dist/css/images/Screenshot1.png)<br>
 
