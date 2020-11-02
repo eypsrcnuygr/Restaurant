@@ -2,7 +2,7 @@
 
 This is the second project on Microverse JavaScript curriculum, to learn the DOM manupilation, modularity and WebPack.
 
-![screenshot](./src/assets/images/Screenshot1.png)<br>
+![screenshot](./dist/css/images/Screenshot1.png)<br>
 
 ## Built With
 
