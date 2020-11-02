@@ -1,30 +1,51 @@
-const path = require("path")
+const path = require('path');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ['./src/index.js', './src/index.scss'],
   output: {
-    filename: "main.js",
-    path: path.join(__dirname, 'dist')
+    filename: 'main.js',
+    path: path.join(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         use: {
-         loader: "babel-loader"
-        }
+          loader: 'babel-loader',
+        },
       },
       {
-        test: /\.css$/,
-        use: [ 
+        test: /\.scss$/,
+        use: [
           {
-           loader: 'style-loader'
+            loader: 'file-loader',
+            options: {
+              name: 'css/[name].index.css',
+            },
           },
           {
-            loader: 'css-loader'
-          }
-        ]
-      }
-    ]
-  }
+            loader: 'extract-loader',
+          },
+          {
+            loader: 'css-loader?-url',
+          },
+          {
+            loader: 'postcss-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(jpeg|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+
+    ],
+  },
 };
